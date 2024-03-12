@@ -52,7 +52,7 @@ Saving configuration...
 Successfully saved NGC configuration to /home/ec2-user/.ngc/config
 ```
 
-To see the [list of all available prebuilt models](https://developer.nvidia.com/docs/nemo-microservices/inference/models.html) run the following command. Currently, NIM supports prebuild models for A100 GPUs (`p4d.24xlarge` instance on AWS). Models available on NGC are TensorRT-LLM engine files which are optimized for a specific GPU type and container image version `(YY.MM)`
+To see the [list of all available prebuilt models](https://developer.nvidia.com/docs/nemo-microservices/inference/models.html) run the following command. Currently, **NIM supports prebuild models for A100 GPUs (`p4d.24xlarge` instance on AWS)**. Models available on NGC are TensorRT-LLM engine files which are optimized for a specific GPU type and container image version `(YY.MM)`
 ```
 ngc registry model list "nvidian/nemo-llm/*"
 ```
