@@ -1,1 +1,2 @@
-docker build -t nim-24.02-sm-final .
+image=$1
+docker build -t ${image} .
