@@ -1,0 +1,1 @@
+docker build -t nim-24.02-sm-final .

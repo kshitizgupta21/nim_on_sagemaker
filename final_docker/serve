@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export SAGEMAKER_MODEL_REPO=/opt/ml/model/model-store/*
+ln -s ${SAGEMAKER_MODEL_REPO} /model-store
+
+nemollm_inference_ms --model_name ${SAGEMAKER_MODEL_NAME} --num_gpus=${SAGEMAKER_NUM_GPUS} --enable_sagemaker
