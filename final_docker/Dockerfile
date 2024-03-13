@@ -1,4 +1,5 @@
-FROM nvcr.io/nvidian/nemo-llm/nemollm-inference-trt-only:24.02.rc2
+FROM nvcr.io/nvidian/nemo-llm/nemollm-inference-trt-only:24.02.rc4
+# SageMaker expects all containers to run with root users
 USER root
 # Downgrade pynvml to make it compatible with 470 driver which is currently used by SM A10G, A100
 RUN apt update && apt install -y python3-pip
