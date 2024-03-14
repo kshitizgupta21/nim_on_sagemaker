@@ -75,7 +75,7 @@ ngc registry model download-version "{Repository}:{Latest Version}"
 
 where you can find the `Repository` and `Latest Version` of the model from `ngc registry model list` command
 
-Below we show how to download **LLama-2-7B** engine which was prebuilt and optimized for running on single A100 GPU, here `Repository="nvidian/nemo-llm/llama-2-7b-chat"`, `Latest Version="LLAMA-2-7B-CHAT-4K-FP16-1-A100.24.02"`
+Below we show how to download **LLama-2-7B** engine which was prebuilt and optimized for running on single A100 GPU, here `Repository="nvaie/nim/llama-2-7b-chat"`, `Latest Version="LLAMA-2-7B-CHAT-4K-FP16-1-A100.24.02"`
 ```
 ngc registry model download-version "nvaie/nim/llama-2-7b-chat:LLAMA-2-7B-CHAT-4K-FP16-1-A100.24.02"
 ```
