@@ -1,4 +1,4 @@
-## Steps for deploying NIM on sagemaker
+## Steps for deploying NVIDIA NIM on sagemaker
 
 
 ## NGC API Key Setup
