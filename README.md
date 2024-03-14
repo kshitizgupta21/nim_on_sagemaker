@@ -35,7 +35,7 @@ docker login nvcr.io
 ```
 Then build docker
 ```
-cd final_docker
+cd docker
 bash build_docker.sh nim-24.02-sm
 ```
 
