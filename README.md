@@ -79,12 +79,12 @@ Successfully saved NGC configuration to /home/ec2-user/.ngc/config
 
 3. To see the [list of all available prebuilt models](https://docs.nvidia.com/ai-enterprise/nim-llm/latest/overview.html) run the following command. Currently, **NIM supports prebuild models for A100 GPUs (`p4d.24xlarge` instance on AWS)**. Models available on NGC are TensorRT-LLM engine files which are optimized for a specific GPU type and container image version `(YY.MM)`
 ```
-ngc registry model list "nvidian/nemo-llm/*"
+ngc registry model list "nvaie/nim/*"
 ```
 
 To make it easy to copy engine name you are interested in you can use
 ```
-ngc registry model list "nvidian/nemo-llm/*" --format_type csv
+ngc registry model list "nvaie/nim/*" --format_type csv
 ```
 
 4. Then use `ngc registry model download-version` to download the prebuilt engine you are interested in. This is the expected format for the command
@@ -94,9 +94,9 @@ ngc registry model download-version "{Repository}:{Latest Version}"
 
 where you can find the `Repository` and `Latest Version` of the model from `ngc registry model list` command
 
-Below we show how to download **LLama-2-7B** engine which was prebuilt and optimized for running on single A100 GPU, here `Repository="nvidian/nemo-llm/llama-2-7b-chat"`, `Latest Version="LLAMA-2-7B-CHAT-4K-FP16-1-A100.24.02.rc4"`
+Below we show how to download **LLama-2-7B** engine which was prebuilt and optimized for running on single A100 GPU, here `Repository="nvidian/nemo-llm/llama-2-7b-chat"`, `Latest Version="LLAMA-2-7B-CHAT-4K-FP16-1-A100.24.02"`
 ```
-ngc registry model download-version "nvidian/nemo-llm/llama-2-7b-chat:LLAMA-2-7B-CHAT-4K-FP16-1-A100.24.02.rc4"
+ngc registry model download-version "nvaie/nim/llama-2-7b-chat:LLAMA-2-7B-CHAT-4K-FP16-1-A100.24.02"
 ```
 
 ### 4. Run through the notebook to deploy on SageMaker
