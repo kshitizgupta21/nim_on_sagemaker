@@ -20,7 +20,7 @@ If you don't already have NGC API Key, follow these steps to generate some NGC A
 
 ## Launch SageMaker notebook instance
 
-Launch SageMaker notebook instance on `g5.xlarge` instance. For the sagemaker notebook instance you can use any instance type.
+Launch SageMaker notebook instance on `g5.xlarge` instance and git clone this repo inside that instance. For the sagemaker notebook instance you can use any instance type.
 
 **IMPORTANT:** In Additional Configuration for **Volume Size in GB** specify at **least 300 GB**.
 
@@ -95,7 +95,7 @@ where you can find the `Repository` and `Latest Version` of the model from `ngc 
 
 Below we show how to download **LLama-2-7B** engine which was prebuilt and optimized for running on single A100 GPU, here `Repository="nvidian/nemo-llm/llama-2-7b-chat"`, `Latest Version="LLAMA-2-7B-CHAT-4K-FP16-1-A100.24.02.rc4"`
 ```
-ngc registry model download-version "nvidian/nemo-llm/llama-2-7b-chat:LLAMA-2-7B-CHAT-4K-FP16-1-A100.24.02.rc4
+ngc registry model download-version "nvidian/nemo-llm/llama-2-7b-chat:LLAMA-2-7B-CHAT-4K-FP16-1-A100.24.02.rc4"
 ```
 
 ### 4. Run through the notebook to deploy on SageMaker
