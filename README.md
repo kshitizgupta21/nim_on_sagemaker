@@ -99,4 +99,4 @@ ngc registry model download-version "nvidian/nemo-llm/llama-2-7b-chat:LLAMA-2-7B
 ```
 
 ### 4. Run through the notebook to deploy on SageMaker
-Run `nim_sm_prebuilt_a100.ipynb` notebook to create SageMaker endpoint and deploy the model.
+Run `nim_prebuilt_a100.ipynb` notebook to create SageMaker endpoint and deploy the model.
