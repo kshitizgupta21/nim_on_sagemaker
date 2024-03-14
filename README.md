@@ -68,8 +68,8 @@ This is expected output of `ngc config set`. You might have to select `nvidian/n
 CLI_VERSION: Latest - 3.40.0 available (current: 3.39.0). Please update by using the command 'ngc version upgrade' 
 Enter API key [no-apikey]. Choices: [<VALID_APIKEY>, 'no-apikey']: <NGC_API_KEY>
 Enter CLI output format type [ascii]. Choices: ['ascii', 'csv', 'json']: 
-Enter org [no-org]: nvidian
-Enter team [no-team] : nemo-llm
+Enter org [no-org]: nvaie
+Enter team [no-team] : nim
 Enter ace [no-ace] : [no-ace] 
 Validating configuration...
 Successfully validated configuration.
