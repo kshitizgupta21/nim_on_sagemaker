@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidian/nemo-llm/nemollm-inference-trt-only:24.02.rc4
+FROM nvcr.io/nvaie/nim/llm_nim:24.02
 # SageMaker expects all containers to run with root users
 USER root
 # Downgrade pynvml to make it compatible with 470 driver which is currently used by SM A10G, A100
