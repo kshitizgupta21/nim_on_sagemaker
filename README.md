@@ -1,21 +1,4 @@
 # Steps for deploying NVIDIA NIM on sagemaker
-## NGC API Key Setup
-If you don't already have NGC API Key, follow these steps to generate some NGC API credentials
-
-1. Sign-in or create a new account at NVIDIA [NGC](https://ngc.nvidia.com/signin).
-2. Select your name in the top-right corner of the screen and then "Setup"
-
-![Select Setup from the top-right menup](img/1-setup.png)
-
-3. Select "Generate API Key".
-
-![Select Generate API Key](img/2-api-key.png)
-
-4. Select the green "+ Generate API Key" button and confirm.
-
-![Select green Generate API Key button ](img/3-generate.png)
-
-5. Copy the API key - this is the last time you can retrieve it!
 
 ## Launch SageMaker notebook instance
 
