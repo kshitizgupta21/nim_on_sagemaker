@@ -92,9 +92,9 @@ ngc registry model download-version "{Repository}:{Latest Version}"
 
 where you can find the `Repository` and `Latest Version` of the model from `ngc registry model list` command
 
-Below we show how to download **LLama-2-7B** engine which was prebuilt and optimized for running on single A100 GPU, here `Repository="<ORG>/<TEAM>/llama-2-7b-chat"`, `Latest Version="LLAMA-2-7B-CHAT-4K-FP16-1-A100.24.02"`
+Below we show how to download **LLama-2-7B** engine which was prebuilt and optimized for running on single A100 GPU, here `Repository="<ORG>/<TEAM>/llama-2-7b-chat"`, `Latest Version="LLAMA-2-7B-CHAT-4K-FP16-1-A100.<YY>.<MM>"`
 ```
-ngc registry model download-version "<ORG>/<TEAM>/llama-2-7b-chat:LLAMA-2-7B-CHAT-4K-FP16-1-A100.24.02"
+ngc registry model download-version "<ORG>/<TEAM>/llama-2-7b-chat:LLAMA-2-7B-CHAT-4K-FP16-1-A100.<YY>.<MM>"
 ```
 
 ### 4. For deploying prebuilt model on p4d.24xlarge (A100 GPU) on SageMaker
