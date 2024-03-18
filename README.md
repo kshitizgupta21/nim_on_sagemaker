@@ -16,14 +16,14 @@ docker login nvcr.io
 ```
 Then pull docker
 ```
-docker pull <NIM CONTAINER>
-docker tag <NIM CONTAINER> nim-<YY>.<MM>-sm
+docker pull nvcr.io/nvidia/nim/llm_nim:24.02-sagemaker
+docker tag nvcr.io/nvidia/nim/llm_nim:24.02-sagemaker nim-24.02-sm
 ```
 
 ### 2. Tag and push container to ECR
 ```
 cd ../
-bash push_ecr.sh nim-<YY>.<MM>-sm
+bash push_ecr.sh nim-24.02-sm
 ```
 
 ### 3. Download the prebuilt optimized model from NGC
@@ -60,12 +60,12 @@ Successfully saved NGC configuration to /home/ec2-user/.ngc/config
 
 3. To see the [list of all available prebuilt models](https://docs.nvidia.com/ai-enterprise/nim-llm/latest/overview.html) run the following command. Currently, **NIM supports prebuild models for A100 GPUs (`p4d.24xlarge` instance on AWS)**. Models available on NGC are TensorRT-LLM engine files which are optimized for a specific GPU type and container image version `(YY.MM)`
 ```
-ngc registry model list "<ORG>/<TEAM>/*"
+ngc registry model list "nvidia/nim/*"
 ```
 
 To make it easy to copy engine name you are interested in you can use
 ```
-ngc registry model list "<ORG>/<TEAM>/*" --format_type csv
+ngc registry model list "nvidia/nim/*" --format_type csv
 ```
 
 4. Then use `ngc registry model download-version` to download the prebuilt engine you are interested in. This is the expected format for the command
@@ -75,9 +75,9 @@ ngc registry model download-version "{Repository}:{Latest Version}"
 
 where you can find the `Repository` and `Latest Version` of the model from `ngc registry model list` command
 
-Below we show how to download **LLama-2-7B** engine which was prebuilt and optimized for running on single A100 GPU, here `Repository="<ORG>/<TEAM>/llama-2-7b-chat"`, `Latest Version="LLAMA-2-7B-CHAT-4K-FP16-1-A100.<YY>.<MM>"`
+Below we show how to download **LLama-2-7B** engine which was prebuilt and optimized for running on single A100 GPU, here `Repository="nvidia/nim/llama-2-7b-chat"`, `Latest Version="LLAMA-2-7B-CHAT-4K-FP16-1-A100.24.02"`
 ```
-ngc registry model download-version "<ORG>/<TEAM>/llama-2-7b-chat:LLAMA-2-7B-CHAT-4K-FP16-1-A100.<YY>.<MM>"
+ngc registry model download-version "nvidia/nim/llama-2-7b-chat:LLAMA-2-7B-CHAT-4K-FP16-1-A100.24.02"
 ```
 
 ### 4. For deploying prebuilt model on p4d.24xlarge (A100 GPU) on SageMaker
