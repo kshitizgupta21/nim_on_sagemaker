@@ -1,6 +1,6 @@
 # Steps for deploying NVIDIA NIM on sagemaker
 
-## Launch SageMaker notebook instance
+### 1. Launch SageMaker notebook instance
 
 Launch SageMaker notebook instance on `g5.xlarge` instance and git clone this repo inside that instance.
 
