@@ -13,6 +13,9 @@ docker login nvcr.io
 # password is <NGC API Key>
 ```
 Then pull docker for specific LLM NIM
+LLama3-8B = nvcr.io/nim/meta/llama3-8b-instruct:latest
+LLama3-70B = nvcr.io/nim/meta/llama3-70b-instruct:1.0.0
+
 ```
 export SRC_IMAGE_PATH=nvcr.io/nim/meta/llama3-8b-instruct:latest
 
@@ -33,5 +36,8 @@ bash push_ecr.sh ${SRC_IMAGE_NAME}
 
 ### 3. If you want to deploy LLama-3 8B model on g5.xlarge (A10G GPU) on SageMaker
 Run `nim_llama3_8b_a10g.ipynb` notebook 
+
+### 4. ### 3. If you want to deploy LLama-3 70B model on p4d.24xlarge (A100 GPU) on SageMaker
+Run `nim_llama3_70b_a100.ipynb` notebook 
 
 
