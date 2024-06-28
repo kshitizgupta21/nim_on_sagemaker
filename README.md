@@ -2,7 +2,7 @@
 
 ### 0. Launch SageMaker notebook instance
 
-Launch SageMaker notebook instance on `ml.t3.medium` instance with **role `AmazonSageMakerServiceCatalogProductsUseRole`** and then git clone this repo inside that instance.
+Launch SageMaker notebook instance on `ml.t3.medium` instance **with the role `AmazonSageMakerServiceCatalogProductsUseRole`** and then git clone this repo inside that instance.
 
 ### 1. Pull and Build SageMaker compatible NIM docker container
 In terminal of SageMaker notebook instance run the following commands. First we authenticate into NGC
