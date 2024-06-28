@@ -37,7 +37,7 @@ bash push_ecr.sh ${SRC_IMAGE_NAME}
 ### 3. If you want to deploy LLama-3 8B model on g5.xlarge (A10G GPU) on SageMaker
 Run `nim_llama3_8b_a10g.ipynb` notebook 
 
-### 4. ### 3. If you want to deploy LLama-3 70B model on p4d.24xlarge (A100 GPU) on SageMaker
+### 4. If you want to deploy LLama-3 70B model on p4d.24xlarge (A100 GPU) on SageMaker
 Run `nim_llama3_70b_a100.ipynb` notebook 
 
 
