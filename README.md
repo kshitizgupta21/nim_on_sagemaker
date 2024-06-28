@@ -13,8 +13,8 @@ docker login nvcr.io
 # password is <NGC API Key>
 ```
 Then pull docker for specific LLM NIM
-LLama3-8B = nvcr.io/nim/meta/llama3-8b-instruct
-LLama3-70B = nvcr.io/nim/meta/llama3-70b-instruct
+* LLama3-8B = nvcr.io/nim/meta/llama3-8b-instruct
+* LLama3-70B = nvcr.io/nim/meta/llama3-70b-instruct
 
 ```
 #export SRC_IMAGE_PATH=nvcr.io/nim/meta/llama3-70b-instruct
